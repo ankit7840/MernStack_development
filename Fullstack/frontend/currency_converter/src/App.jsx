@@ -13,10 +13,12 @@ const currencyInfo=useCurrencyinfo(from);
 const options=Object.keys(currencyInfo);
 
 const swap=()=>{
-  setFrom(to);
-  setTo(from);
+ setTo(from);
   setConvertedAmount(amount);
   setAmount(convertedAmount);
+  console.log('checking the value of the currency info ')
+  console.log(currencyInfo); setFrom(to);
+  
 }
 
    const convert=()=>setConvertedAmount(amount*currencyInfo[to]);
